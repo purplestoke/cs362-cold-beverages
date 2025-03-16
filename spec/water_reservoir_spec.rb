@@ -5,13 +5,14 @@ describe 'A water reservoir' do
 
     it 'has a capacity and initial_water_volume' do
         expect(wata_res.capacity).to eq(10)
-        expect(wata_res.current_water_volume).to eq(0)
+        expect(wata_res.current_water_volume).to eq(10)
     end
 
     describe 'empty?' do
 
         context 'when empty' do
             it 'returns true' do
+                wata_res.drain(10)
                 expect(wata_res.empty?).to eq(true)
             end
         end

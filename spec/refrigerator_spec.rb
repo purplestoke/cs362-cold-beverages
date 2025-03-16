@@ -82,15 +82,11 @@ describe 'A refrigerator' do
                 Power: off
                 Storage: 200 of 200 available
                 Temps: Chiller is 70, Freezer is 70
-                Water: Reservoir has 0 remaining.
+                Water: Reservoir has 10 remaining.
             STATUS
           
               expect(refrigerator.to_s).to eq(expected_output)
             end
         end
     end
-    
-
-    
-
 end
